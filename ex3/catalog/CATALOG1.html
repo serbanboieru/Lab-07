@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+body {
+      background-color: black;
+      
+    }
+    body header h1 {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+      color:white;
+      text-align: center;
+    }
+
+    div{text-align:center;}
+
+    p{text-align: center;
+      font-size: 120%;
+
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      width: 20%;
+        height: auto;
+      border-radius: 50px;
+      border: 2px solid ;
+      border-color: #551553;
+    }
+
+    h1,h2,h4{color: white;
+    text-align: center;}
+
+    h3{
+      color:white;
+      text-align: center;
+    }
+
+    footer {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+    }
+
+
+    #Catalog {
+      color: #614960;
+    }
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h2>Catalog :</h2>
+<img src="unnamed.jpg" style="width:5%" >
+<br><br>
+<div class="mySlides fade">
+  <img src="aa.JPG">
+  <a href="file:///C:/Users/Alex/Desktop/IA_lab06/catalog/Laborator%20IA/Descriere%20personala.html"> Cojocariu Oana Maria </a>
+</div>
+
+<div class="mySlides fade">
+  <img src="Photo-436.jpg">
+  <a href="file:///C:/Users/Alex/Desktop/IA_lab06/catalog/Lab/Personal.html"> Costasuc Daniel Robert </a>
+</div>
+
+<div class="mySlides fade">
+  <img src="minimalistic_00385599.jpg">
+  <a href="file:///C:/Users/Alex/Desktop/IA_lab06/catalog/Desktop/PaginaIA1.html"> Curca Nicola Florin </a>
+</div>
+
+<div class="mySlides fade">
+  <img src="DSC_4345.jpg">
+  <a href="file:///C:/Users/Alex/Desktop/IA_lab06/catalog/Lab05-IA/doc%20(2).html"> Fornade Teodora </a>
+</div>
+<div class="mySlides fade">
+  <img src="IMG_8585.png">
+  <a href="file:///C:/Users/Alex/Desktop/IA_lab06/paginamea1.html"> Boieru Alexandru Șerban </a>
+</div>
+
+</div>
+<br>
+<a href="file:///C:/Users/Alex/Desktop/IA_lab06/catalog/CATALOG1.html"><button> back </button></a>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

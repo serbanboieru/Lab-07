@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prima mea pagina </title>
+<style>
+body {
+background-color: yellow;
+}
+h1{
+color: green;
+}
+p{
+color:red;
+font-size: 30px;
+}
+table
+{
+background-color: white;
+color: blue;
+width: 30px;
+}
+table
+{border: 5px solid #ddd;
+border-radius: 4px;
+padding 5px;
+width 150px;
+font-size: 25px;
+}
+p
+{
+background-color: white; 
+border: 2px solid red 
+
+}
+img
+{
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius:30%;
+opacity:0.7;
+}
+</style>
+<script>
+	      function veziViitor()
+		  {
+		     document.getElementById("NumeProfil").innerHTML="Software Developer";
+			 document.getElementById("aprof").innerHTML="Palnuri de viitor "
+			 document.getElementById("jobintermediar").innerHTML="fotograf din pasiune"
+			 document.getElementById("pasiuni").innerHTML="Pe perioada facultatii imi doresc sa devin tot mai curios in procesul de invatare."
+			 document.body.style.backgroundColor="black";
+			 document.getElementById("detalii").innerHTML="Nu voi fi un om obisnuit, pentru ca am dreptul de a fi extraordinar."
+			 document.getElementById("investitii pentru viitor").innerHTML="Investitii pentru viitor:"
+			 document.getElementById("actiuni").innerHTML="Actiuni in cadrul unei companii"
+			 document.getElementById("noi").innerHTML="Echipament foto performant"
+			 document.getElementById("elicopter").innerHTML="un elicopter"
+			 
+			 var tabel =document.getElementById("tabelEducatie");
+			 tabelEducatie.rows[0].cells[0].innerHTML="Tari pe care imi doresc sa le vizitez: ";
+			 tabelEducatie.rows[0].cells[1].innerHTML="Danemarca ";
+			 tabelEducatie.rows[0].cells[2].innerHTML=" ";
+			 tabelEducatie.rows[0].cells[3].innerHTML=" SUA ";
+			 tabelEducatie.rows[1].cells[0].innerHTML=" "
+			 tabelEducatie.rows[1].cells[1].innerHTML=" Programe pe care le stapanesc foarte bine:"
+			 tabelEducatie.rows[1].cells[2].innerHTML="Adobe Photoshop "
+			 tabelEducatie.rows[1].cells[3].innerHTML=" Adobe Lightroom";
+			 tabelEducatie.rows[2].cells[0].innerHTML="Echipament foto folosit: ";
+			 tabelEducatie.rows[2].cells[1].innerHTML="Canon EOS 6D ";
+			 tabelEducatie.rows[2].cells[2].innerHTML="Blit GODOX TT685 ";
+			 tabelEducatie.rows[2].cells[3].innerHTML="Obiective 50mm;100mm;24-80mm ";
+			 
+			 document.getElementById("imagineNoua").src="1final";
+			 document.getElementById("imagineNoua").style.opacity="0.7";
+			 document.getElementById("imagineNoua").style.border="1em solid";
+			 document.getElementById("imagineNoua").style.border.radius="10px";
+		     
+			 
+		   var h3= document.getElementsByTagName("h3");
+		   var i;
+		   
+		  for(i = 0; i < h3.length; i++)
+		  {
+          h3[i].style.color= "green";
+          h3[i].style.fontFamily ="cursive";
+
+          }
+		  
+		  var td= document.getElementsByTagName("td");
+		  for(i=0; i< td.length; i++)
+		  {
+		  tr[i].style.color="green";
+		  tr[i].style.fontFamily="italic"
+		  }
+		  
+        
+		  }
+		 function Age()
+		  {
+		  var azi= new Date;
+		  var varstaMea;
+		  
+		  var anNas = document.getElementById("varsta").innerHTML;
+		  varstaMea = azi.getFullYear() - parseInt(anNas);
+		  
+		  document.getElementById("varsta").innerHTML = varstaMea;
+		  }
+		 
+	   </script>
+<button type="button" onclick="veziViitor()">Alta viata</button>
+</head>
+<body>
+<header >
+<h1 id= "NumeProfil" >Boieru Alexandru Șerban</h1>
+</header>
+<h1 id="jobintermediar"> email: serbanboieru@yahoo.com</h1>
+<p onmouseover = "Age()" id = "varsta" align=center> 2001</p>
+<image id="imagineNoua" src="IMG_8585.png" width="200" height="300">
+<p id="detalii">Sunt student in anul 1 la Facultatea de Electronica Telecomunicatii si Tehnologia Informatiei.</p>
+<p id="pasiuni">Hobby-urile mele sunt: fotografia si practicarea mai multor sporturi.<p/>
+<table id="tabelEducatie" >
+<tbody>
+<tr>
+<td> Numar criteriu </td>
+<td id="aprof"> Disciplina </td>
+<td> Anul in care se studiaza </td>
+<td> Descriere </td>
+</tr>
+<tr>
+<td> 1 </td>
+<td> Informatica Aplicata </td>
+<td> Anul 1 </td>
+<td>
+<a href= "https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf?fbclid=IwAR2-0BU99VL7uinOt7H1glh3vdBVaZtrsEEzWjkQSIP5sdvhyTf0Ffcd3Lo"> link </a>
+</td>
+</tr>
+<tr>
+<td> 2 </td>
+<td> Programarea Calculatoarelor </td>
+<td> Anul 1 </td>
+<td>
+<a href= "https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf?fbclid=IwAR1eoSjnomU2BjVERpPLo9stDfsj6DeN7_Mesut4iE_t6jP6_y4ZniVQsTo"> link </a>
+</td>
+</tr>
+<tr>
+<td id="investitii pentru viitor"> 3 </td>
+<td id="actiuni"> Algebra Liniara </td>
+<td id="noi"> Anul 1 </td>
+<td>
+<a id="elicopter" href= "https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3102.pdf?fbclid=IwAR0Hdt1tDejj7BdsjxHNoPiT0WlOpaPxFzNyDxdW2DFb34nYDMvhxAaqoiM"> link </a>
+</td>
+</tr>
+</tbody>
+</table>
+<a href="file:///C:/Users/Alex/Desktop/IA_lab06/catalog/CATALOG1.html"><button> back </button></a>
+</body>
+</html>
